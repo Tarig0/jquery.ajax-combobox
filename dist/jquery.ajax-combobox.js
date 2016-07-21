@@ -850,21 +850,21 @@ $.extend(AjaxComboBox.prototype, /** @lends AjaxComboBox.prototype */ {
    */
   _ehNaviPaging: function(self) {
     // "<< 1"
-    $(self.elem.navi).find('.navi_first').mouseup(function(ev) {
+    $(self.elem.navi).find('.navi_first').click(function(ev) {
       $(self.elem.combo_input).focus();
       ev.preventDefault();
       self._firstPage(self);
     });
 
     // "< prev"
-    $(self.elem.navi).find('.navi_prev').mouseup(function(ev) {
+    $(self.elem.navi).find('.navi_prev').click(function(ev) {
       $(self.elem.combo_input).focus();
       ev.preventDefault();
       self._prevPage(self);
     });
 
     // the number of page
-    $(self.elem.navi).find('.navi_page').mouseup(function(ev) {
+    $(self.elem.navi).find('.navi_page').click(function(ev) {
       $(self.elem.combo_input).focus();
       ev.preventDefault();
 
@@ -876,14 +876,14 @@ $.extend(AjaxComboBox.prototype, /** @lends AjaxComboBox.prototype */ {
     });
 
     // "next >"
-    $(self.elem.navi).find('.navi_next').mouseup(function(ev) {
+    $(self.elem.navi).find('.navi_next').click(function(ev) {
       $(self.elem.combo_input).focus();
       ev.preventDefault();
       self._nextPage(self);
     });
 
     // "last >>"
-    $(self.elem.navi).find('.navi_last').mouseup(function(ev) {
+    $(self.elem.navi).find('.navi_last').click(function(ev) {
       $(self.elem.combo_input).focus();
       ev.preventDefault();
       self._lastPage(self);
